@@ -6,7 +6,7 @@
 ​
  */
 function drawSmallPizzaSlice(): void {
-    console.log(" _ ");
+    console.log(" /\ ");
     console.log(" |_| ");
 }
 ​
@@ -20,7 +20,7 @@ function drawSmallPizzaSlice(): void {
  */
 ​
 function drawMediumPizzaSlice(): void {
-    console.log(" __ ");
+    console.log(" / \ ");
     console.log(" |__| ");
 }
 ​
@@ -36,7 +36,7 @@ function drawMediumPizzaSlice(): void {
 ​
  */
 function drawLargePizzaSlice(): void {
-    console.log(" __ ");
+    console.log(" / \ ");
     console.log(" | .| ")
     console.log(" |__| ");
 }
