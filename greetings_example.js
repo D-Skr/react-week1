@@ -11,10 +11,19 @@ const greetingWords = ["hello", "hi", "hey"];
 const prefixes = ["my", "his", "her", "their"];
 
 function firstLetterUpperCase(word) {
+  // code below is same as: const upperCaseFirstLetter = word.charAt(0).toUpperCase();
+  let firstLetterCapitalized = word.charAt(0);
+  firstLetterCapitalized = firstLetterCapitalized.toUpperCase();
+
+  const wordMinusFirstCharacter = word.slice(1);
+
+  return firstLetterCapitalized + wordMinusFirstCharacter;
+
+  // The line of code below does the same as all the code above
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-console.log(firstLetterUpperCase("hello!!!")); // Hello!!
+console.log(firstLetterUpperCase("hello!!!"));
 
 /**
  @param {string} name
@@ -26,35 +35,9 @@ console.log(firstLetterUpperCase("hello!!!")); // Hello!!
           greeting sentence
 */
 function greeting(name, gender, isSelf) {
-  var greetingWord="";     
-  var pronoun="";
-
-  if(isSelf == true)
-  {
-     greetingWord = greetingWords[0];
-     pronoun = prefixes[0];
-  }
-  else
-  {
-    switch (gender) {
-      case "male":
-            greetingWord = greetingWords[1];
-            pronoun = prefixes[1];  
-            break;
-      case "female":
-            greetingWord = greetingWords[2];
-            pronoun = prefixes[2];  
-            break;
-      default:
-            greetingWord = greetingWords[2];
-            pronoun = prefixes[3];  
-            break;            
-      }
-  }
-  greetingWord=greetingWord.charAt(0).toUpperCase() + greetingWord.slice(1);
-   return  `${greetingWord} ${pronoun} name is ${name}` ; // use template literal for string to return
- }
-
+  // do stuff here ...
+  return ``; // use template literal for string to return
+}
 
 console.log(greeting("Dmitrii", "male", true)); // Hi, my name is Dmitrii
 console.log(greeting("Ann", "female", false));
