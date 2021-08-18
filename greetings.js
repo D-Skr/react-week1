@@ -26,8 +26,8 @@ console.log(firstLetterUpperCase("hello!!!")); // Hello!!
           greeting sentence
 */
 function greeting(name, gender, isSelf) {
-  var greetingWord = "";
-  var pronoun = "";
+  var greetingWord;
+  var pronoun;
 
   if (isSelf == true) {
     greetingWord = greetingWords[0];
